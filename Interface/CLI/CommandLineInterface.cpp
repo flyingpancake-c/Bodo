@@ -52,6 +52,18 @@ namespace CLI {
         SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), color);
     }
 
+    void ViewAllAvailableDoctors() {
+        std::cout << "[TODO] ViewAllAvailableDoctors dipanggil\n";
+    }
+
+    void SearchDoctorBySpecialization() {
+        std::cout << "[TODO] SearchDoctorBySpecialization dipanggil\n";
+    }
+
+    void ViewDoctorAvailableSchedules() {
+        std::cout << "[TODO] ViewDoctorAvailableSchedules dipanggil\n";
+    }
+
     void BookDoctorAppointment() {
         const std::string menu[] = {
             // 🗓️ Booked appointment with doctor
@@ -193,9 +205,9 @@ namespace CLI {
                 // "Exit"
 
                 switch (selected) {
-                    case 0: ; return;
-                    case 1: ; return;
-                    case 2: ; return;
+                    case 0: ViewAllAvailableDoctors(); return;
+                    case 1: SearchDoctorBySpecialization(); return;
+                    case 2: ViewDoctorAvailableSchedules(); return;
                     case 3: ; return;
                     case 4: ; return;
                     case 5: ; return;
